@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1><u>Recipe Finder</u></h1>
+            <p>Find your favorite recipes based on ingredients you have!</p>
+        </div>
+    </header>
+    
+    <main>
+        <div class="container">
+            <h1></h1>
+            <input type="text" id="ingredient" placeholder="Enter ingredient (e.g., chicken)">
+            <button onclick="getRecipes()">Search</button>
+            <label for="sort">Sort by:</label>
+            <select id="sort" onchange="sortRecipes()">
+                <option value="title">Choose an option</option>
+                <option value="calories">Calories (Low to High)</option>
+                <option value="popularity">Popularity (Most Used)</option>
+            </select>
+            <div id="recipes"></div>
+        </div>
+
+        <section class="recipe-results">
+            <h2><u>Popular Foods</u></h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Category</th>
+                        <th>Calories</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Spaghetti</td>
+                        <td>Pasta</td>
+                        <td>200 kcal</td>
+                    </tr>
+                    <tr>
+                        <td>Chicken Salad</td>
+                        <td>Salad</td>
+                        <td>150 kcal</td>
+                    </tr>
+                    <tr>
+                        <td>Fruit Smoothie</td>
+                        <td>Drink</td>
+                        <td>180 kcal</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div id="recipeResults"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Recipe Finder. All Rights Reserved.</p>
+        <p class="name">Created by Kelly</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

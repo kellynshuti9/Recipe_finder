@@ -1,0 +1,6 @@
+# Ignore node_modules, log files, environment files, and API keys
+node_modules/
+.env
+*.log
+.DS_Store
+api_keys.txt
