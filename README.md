@@ -31,3 +31,6 @@ The user interface requires improvement through better responsive animations.
 
 # License
 Users can access the project for free and as an open-source platform.
+
+# Here is the video showing how the app works
+https://drive.google.com/file/d/1_-raLNLvwYsBgVnOW4SS5JLMedTDGvs2/view
